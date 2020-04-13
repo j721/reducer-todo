@@ -1,5 +1,5 @@
 //Initialize state for todo items
-export const intialState =[{
+export const initialState =[{
     todo:'Learn about reducers',
     completed: false,
     id: 3892987589
