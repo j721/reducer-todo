@@ -8,9 +8,14 @@ function App() {
   //declare stae and disipatch with reducer 
   return (
     <div className="App">
-      <header className="App-header">
         <h1>Todo List</h1>
-      </header>
+        <TodoForm addTodo ={addTodo} />
+        <TodoList state ={state} handleComplete ={handleComplete} 
+        <button onClick ={(e)=>{
+          e.preventDefault(); 
+          clearCompleted();
+          />Clear</button>
+        }}
     </div>
   );
 }
