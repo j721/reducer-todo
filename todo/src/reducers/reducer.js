@@ -1,6 +1,6 @@
 //Initialize state for todo items
 export const intialState =[{
-    item:'Learn about reducers',
+    todo:'Learn about reducers',
     completed: false,
     id: 3892987589
 }];
@@ -14,9 +14,9 @@ export function reducer (state, action) {
                 { item: action.payload, completed:false, id: Date.now() } 
             ]
         case "COMPLETED_TODO":
-            return state.map((todo)=>{
-                return todo.id ===action.payload?
-                {...todo, completed: !todo.completed}:todo
+            return state.map((item)=>{
+                return item.id ===action.payload?
+                {...item, completed: !item.completed}:item
             })
         case "CLEAR_COMPLETED_TODO":
             return state.filter((item)=> !item.completed)
