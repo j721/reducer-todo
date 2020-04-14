@@ -29,7 +29,7 @@ function TodoForm(props){
                 onChange ={(event)=>{
                     setForm(event.target.value);
                 }}
-            /><button type ='submit'>Add Todo</button>
+            /><button type ='submit'>Add</button>
         </form>
     )
 }

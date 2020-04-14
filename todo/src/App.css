@@ -5,8 +5,3 @@
 .App-link {
   color: #61dafb;
 }
-
-.item.completed {
-  background-color: #9489cea3;
-  text-decoration: line-through;
-}
