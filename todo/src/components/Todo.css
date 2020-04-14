@@ -61,9 +61,11 @@ p,span {
 .completed {
   background-color: #9489cea3;
   text-decoration: line-through;
+  color: #263c0a;
 }
 form {
     width: 34%;
+    margin-top: 4%;
 }
 
 form > input {
@@ -82,8 +84,8 @@ form > input {
 }
 
 button {
-    background-color: #95abea;
-    border: 1px solid #95abea;
+    background-color: #a3cc9e;;
+    border: 1px solid #a3cc9e;;
     color: white;
     font-size: 1rem;
     padding: 0.375rem 0.875rem;
@@ -94,10 +96,11 @@ button {
 }
 
 input::placeholder {
-  color: #95abea;;
+  color: #689063;
   opacity: 1;
 }
 
 .clear-button {
     margin-right: 64%;
+    margin-top: 1rem; 
 }
