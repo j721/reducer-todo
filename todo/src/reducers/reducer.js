@@ -2,7 +2,7 @@
 export const initialState =[{
     todo:'Learn about reducers',
     completed: false,
-    id: 3892987589
+    id: Date.now()
 }];
 //reducer function- updates and manipulates state
 export function reducer (state, action) {
@@ -11,7 +11,7 @@ export function reducer (state, action) {
         case 'ADD_TODO':
             return[
                 ...state,
-                { item: action.payload, completed:false, id: Date.now() } 
+              action.payload
             ]
         case "COMPLETED_TODO":
             return state.map((item)=>{

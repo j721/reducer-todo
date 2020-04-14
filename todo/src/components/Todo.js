@@ -8,7 +8,7 @@ const Todo = props =>{
             <h2 className ={props.item.completed ? 'completed':''}
             onClick ={(event)=>{
                 event.preventDefault()
-                props.handleComplete(props.item.id)
+                props.handleChange(props.item.id)
             }}
             >{props.item.todo}</h2>
         </div>

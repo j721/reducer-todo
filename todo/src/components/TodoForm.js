@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 // const TodoForm = ({dispatch})=>{
 //     const [item, setItem] = useState("");
@@ -15,7 +15,7 @@ import React from 'react';
 // }
 
 function TodoForm(props){
-    const [item, setItem] = useState("");
+    const [form, setForm] = useState("");
     return(
         <form onSubmit ={(event)=>{
             event.preventDefault();
@@ -27,9 +27,11 @@ function TodoForm(props){
                 placeholder ='Add'
                 value ={form}
                 onChange ={(event)=>{
-                    setItem(event.target.value);
+                    setForm(event.target.value);
                 }}
             /><button type ='submit'>Add Todo</button>
         </form>
     )
 }
+
+export default TodoForm;
