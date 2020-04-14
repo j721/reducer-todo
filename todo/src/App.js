@@ -2,6 +2,7 @@ import React,{useReducer} from 'react';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
 import {initialState, reducer} from './reducers/reducer';
+import './components/Todo.css'
 import './App.css';
 
 
